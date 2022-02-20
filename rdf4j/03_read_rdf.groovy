@@ -8,7 +8,7 @@ import org.eclipse.rdf4j.rio.Rio
 
 def model = null;
 
-new File("rdf4j/02_write.ttl").withReader('utf-8') {
+new File("tmp/02_write.ttl").withReader('utf-8') {
     reader ->
         model = Rio.parse(reader,"",RDFFormat.TURTLE)
 }

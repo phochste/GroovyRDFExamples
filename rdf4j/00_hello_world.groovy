@@ -19,6 +19,7 @@ def model = new TreeModel()
 model.add(picasso, RDF.TYPE, artist)
 model.add(picasso, FOAF.FIRST_NAME, literal("Pablo"))
 
+// Model is a java.util.Set<Statement> we can loop over it
 model.each( st -> {
     println(st)
 })

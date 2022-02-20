@@ -27,7 +27,7 @@ def model  = builder.setNamespace("ex","https://example.org/")
                      .add("ex:brol",bnode())
                      .build()
 
-new File("rdf4j/02_write.ttl").withWriter('utf-8') {
+new File("tmp/02_write.ttl").withWriter('utf-8') {
     writer ->
         Rio.write(model, writer, RDFFormat.TURTLE)
 }
